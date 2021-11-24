@@ -1,0 +1,42 @@
+{
+    "name": "jorgenwdm/laravel-barcode",
+    "description": "A Laravel barcode generator based on TCPDF barcode library",
+    "keywords": [
+        "barcode",
+        "qrcode",
+        "qr-code",
+        "laravel-package",
+        "laravel",
+        "TCPDF",
+        "php",
+        "jorgenwdm"
+      ],
+    "type": "service",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "jorgenwdm",
+            "email": "grtrustme@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^8.0"        
+    },
+    "autoload": {
+        "files": [
+            "src/Generators/Helpers.php"
+        ],
+        "psr-4": {
+            "Jorgenwdm\\Barcode\\": "src"
+        }        
+    },    
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Jorgenwdm\\Barcode\\BarcodeServiceProvider"
+            ]
+        }
+    }
+}
