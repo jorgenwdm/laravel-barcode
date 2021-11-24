@@ -1,14 +1,13 @@
 <div align="center">
-	<p><img src="art/github-banner.jpg" alt="SmsCanal logo"></p>   
+	<p><img src="art/github-banner.jpg" alt="Laravel Barcode Logo"></p>   
     <a href="#requirements">Requirements</a> |    
-    <a href="#supported-symbologies">Supported Symbologies</a> |    
-    <a href="#how-to-send-a-message">How to send a message</a> |    
-    <a href="#how-to-get-a-delivery-report">How to get a delivery report</a>
+    <a href="#installation">Installation</a> |    
+    <a href="#supported-symbologies">Supported Symbologies</a>
 </div>
 
 ------
 
-# Laravel Barcode Generator
+# Laravel Barcode
 
 ## Introduction
 
@@ -196,7 +195,7 @@ These are `size($width, $height)`, `color($hexColor)`.
     // We will create a DATAMATRIX barcode where 
     // each small rectangle of the barcode has width 6px and height 6px
     // The color of the barcode will be #000000 (that is black)
-    echo Barcode2d::create("DATAMATRIX", "http://www.test.com/")->size(6,6)->color("#000000")->toHtml();
+    echo Barcode2d::create("DATAMATRIX", "http://www.in.gr/")->size(6,6)->color("#000000")->toHtml();
 
 ```
 
@@ -208,7 +207,7 @@ This function is auto-loaded as soon as you install this package and you can use
 Tha basic syntax is 
 
 ```php
-create_barcode ( $barcodeCategory, $barcodeType, $barcodeText, $width, $height, $hexColor, $output );
+create_barcode($barcodeCategory, $barcodeType, $barcodeText, $width, $height, $hexColor, $output);
 
 ```
 
